@@ -18,7 +18,10 @@ function ToDoCard() {
           fjerne enkelte ting og hele listen.
         </p>
       </section>
-      <ProjectBtn href="https://christiansb89.github.io/todo-list/">
+      <ProjectBtn
+        href="https://christiansb89.github.io/todo-list/"
+        target="_blank"
+      >
         Prøv det her
       </ProjectBtn>
     </CardStyle>
