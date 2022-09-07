@@ -1,0 +1,8 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+  color: #16697a;
+  margin: 0;
+  background-image: url("./components/img/wallpaper.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
