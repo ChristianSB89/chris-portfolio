@@ -32,7 +32,7 @@ export const SideBarStyle = styled.section`
   @media (max-width: 1000px) {
     width: 25vw;
     margin-top: 1.9em;
-    height: 35em;
+    height: 40em;
     top: 0;
     left: 0;
     position: fixed;
