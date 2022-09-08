@@ -1,16 +1,21 @@
 {
   "files": {
-    "main.css": "/chris-portfolio/static/css/main.073c9b0a.css",
-    "main.js": "/chris-portfolio/static/js/main.9addd251.js",
+    "main.css": "/chris-portfolio/static/css/main.f2bf7036.css",
+    "main.js": "/chris-portfolio/static/js/main.7f5eada8.js",
     "static/js/787.e8fd3f8a.chunk.js": "/chris-portfolio/static/js/787.e8fd3f8a.chunk.js",
-    "static/media/logo.svg": "/chris-portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/profile.jpg": "/chris-portfolio/static/media/profile.50ad79ec557943fde88e.jpg",
+    "static/media/drumkit.png": "/chris-portfolio/static/media/drumkit.bba804cfce130b33a893.png",
+    "static/media/map.png": "/chris-portfolio/static/media/map.fce8063f6f2dc1dac324.png",
+    "static/media/dolingen_thumb.png": "/chris-portfolio/static/media/dolingen_thumb.1ca1dc1d44f6a28da07b.png",
+    "static/media/wallpaper.png": "/chris-portfolio/static/media/wallpaper.829db6963f37c8988d7b.png",
+    "static/media/to-doList.png": "/chris-portfolio/static/media/to-doList.913c68fa2a60e8b43ed0.png",
     "index.html": "/chris-portfolio/index.html",
-    "main.073c9b0a.css.map": "/chris-portfolio/static/css/main.073c9b0a.css.map",
-    "main.9addd251.js.map": "/chris-portfolio/static/js/main.9addd251.js.map",
+    "main.f2bf7036.css.map": "/chris-portfolio/static/css/main.f2bf7036.css.map",
+    "main.7f5eada8.js.map": "/chris-portfolio/static/js/main.7f5eada8.js.map",
     "787.e8fd3f8a.chunk.js.map": "/chris-portfolio/static/js/787.e8fd3f8a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.9addd251.js"
+    "static/css/main.f2bf7036.css",
+    "static/js/main.7f5eada8.js"
   ]
 }
