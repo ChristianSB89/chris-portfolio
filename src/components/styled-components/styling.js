@@ -142,8 +142,9 @@ export const ModalSection = styled.section`
   z-index: 9999; //So the modal will always be on top
   @media (max-width: 1000px) {
     width: 100vw;
-    height: 35em;
+    height: 40em;
     margin: 0 auto;
+    top: 0;
     background: rgba(255, 255, 255, 0.9);
     z-index: 9999;
   }
