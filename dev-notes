@@ -14,4 +14,7 @@
   -Remake the way my projects are displayed
   -Light/dark mode?
   -Translator
+  
+*Scrapped:
+  -iFrame on projects instead of images (never added as I felt it could get confusing and slow down loading of page)
     
