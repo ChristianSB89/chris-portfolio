@@ -268,6 +268,7 @@ export const ProjectBtn = styled.a`
   color: #0a323b;
   background: white;
   padding: 0.5em 2em 0.5em 2em;
+  margin: 0 0.5em;
   border-radius: 16px;
   &:hover {
     color: #82c0cc;

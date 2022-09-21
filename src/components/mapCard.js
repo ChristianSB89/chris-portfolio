@@ -17,7 +17,13 @@ function MapCard() {
         href="https://christiansb89.github.io/Map-Test/"
         target="_blank"
       >
-        Prøv det her
+        Gå til kartet
+      </ProjectBtn>
+      <ProjectBtn
+        href="https://github.com/ChristianSB89/Map-Test"
+        target="_blank"
+      >
+        Koden på GitHub
       </ProjectBtn>
     </CardStyle>
   );

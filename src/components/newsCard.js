@@ -19,6 +19,12 @@ function NewsCard() {
       >
         Se hele siden
       </ProjectBtn>
+      <ProjectBtn
+        href="https://github.com/ChristianSB89/Dolingen"
+        target="_blank"
+      >
+        Koden på GitHub
+      </ProjectBtn>
     </CardStyle>
   );
 }

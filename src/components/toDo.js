@@ -24,6 +24,12 @@ function ToDoCard() {
       >
         Prøv det her
       </ProjectBtn>
+      <ProjectBtn
+        href="https://github.com/ChristianSB89/todo-list"
+        target="_blank"
+      >
+        Koden på GitHub
+      </ProjectBtn>
     </CardStyle>
   );
 }

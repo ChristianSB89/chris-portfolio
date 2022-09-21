@@ -20,7 +20,13 @@ function DrumsCard() {
         href="https://christiansb89.github.io/drumkit-javascript/"
         target="_blank"
       >
-        Prøv det her
+        Prøv trommer her
+      </ProjectBtn>
+      <ProjectBtn
+        href="https://github.com/ChristianSB89/drumkit-javascript"
+        target="_blank"
+      >
+        Koden på GitHub
       </ProjectBtn>
     </CardStyle>
   );
