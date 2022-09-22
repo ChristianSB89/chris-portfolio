@@ -3,7 +3,6 @@
 --------------------------------------------------------------
 
 *Planned:
-  -More optimizing for mobile
   -Fix spacing on top and bottom
   -Adjust font sizes
   -Adjust sidebar size
@@ -16,6 +15,7 @@
 
 Done:
   -Add source code button on github projects + edit the existing buttons
+  -More optimizing for mobile
 
 *Scrapped:
   -iFrame on projects instead of images (never added as I felt it could get confusing and slow down loading of page)
