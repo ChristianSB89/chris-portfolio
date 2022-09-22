@@ -3,7 +3,7 @@ import {
   ModalSection,
   AboutBtn,
   AboutTxt,
-  MailStyle,
+  ModalStyle,
   StyledLinks,
 } from "../styled-components/styling";
 import linkedin from "../img/linkedin.png";
@@ -41,9 +41,9 @@ const Modal = (props) => {
             programvarer.
           </p>
         </AboutTxt>
-        <MailStyle href="mailto:#" className="footerMail">
+        <ModalStyle href="mailto:#" className="footerMail">
           christiansb.kodehode@gmail.com
-        </MailStyle>
+        </ModalStyle>
 
         <StyledLinks>
           <a href="https://www.linkedin.com/in/chris-sabre/" className="link">

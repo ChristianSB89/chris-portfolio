@@ -155,11 +155,25 @@ export const FooterText = styled.p`
   }
 `;
 
-export const MailStyle = styled.a`
+export const ModalStyle = styled.a`
   color: #0a323b;
   text-decoration: none;
   &:hover {
     text-decoration: underline;
+  }
+  @media (min-width: 1000px) {
+    display: none;
+  }
+`;
+
+export const SidebarMail = styled.a`
+  color: #0a323b;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+  @media (max-width: 1000px) {
+    display: none;
   }
 `;
 

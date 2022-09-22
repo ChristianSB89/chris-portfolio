@@ -11,6 +11,7 @@ import {
   NameStyle,
   TitleStyle,
   MobileLinks,
+  SidebarMail,
 } from "./styled-components/styling";
 import profile from "./img/profile.jpg";
 import Modal from "./modal/aboutModal";
@@ -70,6 +71,9 @@ function SideBar() {
             <img src={youtube}></img>
           </a>
         </MobileLinks>
+        <SidebarMail href="mailto:#" className="footerMail">
+          christiansb.kodehode@gmail.com
+        </SidebarMail>
         <FooterText>Copyright © 2022</FooterText>
         <FooterText>Christian Sandum Breivik</FooterText>
       </FooterDeco>
