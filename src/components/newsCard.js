@@ -1,6 +1,11 @@
 import React from "react";
 import dolingen from "./img/dolingen_thumb.png";
-import { CardStyle, ProjectBtn, ProjectImg } from "./styled-components/styling";
+import {
+  BtnSection,
+  CardStyle,
+  ProjectBtn,
+  ProjectImg,
+} from "./styled-components/styling";
 
 function NewsCard() {
   return (
@@ -13,18 +18,20 @@ function NewsCard() {
           fra Flexbox til å lenke til andre sider.
         </p>
       </section>
-      <ProjectBtn
-        href="https://christiansb89.github.io/Dolingen/"
-        target="_blank"
-      >
-        Se hele siden
-      </ProjectBtn>
-      <ProjectBtn
-        href="https://github.com/ChristianSB89/Dolingen"
-        target="_blank"
-      >
-        Koden på GitHub
-      </ProjectBtn>
+      <BtnSection>
+        <ProjectBtn
+          href="https://christiansb89.github.io/Dolingen/"
+          target="_blank"
+        >
+          Se hele siden
+        </ProjectBtn>
+        <ProjectBtn
+          href="https://github.com/ChristianSB89/Dolingen"
+          target="_blank"
+        >
+          Koden på GitHub
+        </ProjectBtn>
+      </BtnSection>
     </CardStyle>
   );
 }

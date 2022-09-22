@@ -1,6 +1,11 @@
 import React from "react";
 import map from "./img/map.png";
-import { CardStyle, ProjectBtn, ProjectImg } from "./styled-components/styling";
+import {
+  BtnSection,
+  CardStyle,
+  ProjectBtn,
+  ProjectImg,
+} from "./styled-components/styling";
 
 function MapCard() {
   return (
@@ -13,18 +18,20 @@ function MapCard() {
           for å lære om henting av API.
         </p>
       </section>
-      <ProjectBtn
-        href="https://christiansb89.github.io/Map-Test/"
-        target="_blank"
-      >
-        Gå til kartet
-      </ProjectBtn>
-      <ProjectBtn
-        href="https://github.com/ChristianSB89/Map-Test"
-        target="_blank"
-      >
-        Koden på GitHub
-      </ProjectBtn>
+      <BtnSection>
+        <ProjectBtn
+          href="https://christiansb89.github.io/Map-Test/"
+          target="_blank"
+        >
+          Gå til kartet
+        </ProjectBtn>
+        <ProjectBtn
+          href="https://github.com/ChristianSB89/Map-Test"
+          target="_blank"
+        >
+          Koden på GitHub
+        </ProjectBtn>
+      </BtnSection>
     </CardStyle>
   );
 }

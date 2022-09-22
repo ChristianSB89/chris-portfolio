@@ -50,7 +50,8 @@ function SideBar() {
       {/* Links to other pages with copyright and mail at bottom of sidebar */}
 
       <FooterDeco>
-        <FooterText>Copyright © 2022 - Christian Sandum Breivik</FooterText>
+        <FooterText>Copyright © 2022</FooterText>
+        <FooterText>Christian Sandum Breivik</FooterText>
       </FooterDeco>
     </SideBarStyle>
   );

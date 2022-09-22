@@ -1,6 +1,11 @@
 import React from "react";
 import drumkit from "./img/drumkit.png";
-import { CardStyle, ProjectBtn, ProjectImg } from "./styled-components/styling";
+import {
+  CardStyle,
+  ProjectBtn,
+  ProjectImg,
+  BtnSection,
+} from "./styled-components/styling";
 
 function DrumsCard() {
   return (
@@ -16,18 +21,20 @@ function DrumsCard() {
           og med tastaturet.
         </p>
       </section>
-      <ProjectBtn
-        href="https://christiansb89.github.io/drumkit-javascript/"
-        target="_blank"
-      >
-        Prøv trommer her
-      </ProjectBtn>
-      <ProjectBtn
-        href="https://github.com/ChristianSB89/drumkit-javascript"
-        target="_blank"
-      >
-        Koden på GitHub
-      </ProjectBtn>
+      <BtnSection>
+        <ProjectBtn
+          href="https://christiansb89.github.io/drumkit-javascript/"
+          target="_blank"
+        >
+          Prøv trommer her
+        </ProjectBtn>
+        <ProjectBtn
+          href="https://github.com/ChristianSB89/drumkit-javascript"
+          target="_blank"
+        >
+          Koden på GitHub
+        </ProjectBtn>
+      </BtnSection>
     </CardStyle>
   );
 }

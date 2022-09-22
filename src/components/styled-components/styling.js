@@ -7,7 +7,6 @@ import styled from "styled-components";
 export const AppStyle = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   @media (max-width: 1000px) {
     justify-content: space-evenly;
   }
@@ -22,6 +21,7 @@ export const SideBarStyle = styled.section`
   position: sticky;
   text-align: center;
   width: 20%;
+  height: 55em;
   padding: 1.87em;
   background: rgba(255, 255, 255, 0.23);
   border-radius: 16px;
@@ -31,9 +31,9 @@ export const SideBarStyle = styled.section`
   border: 1px solid rgba(255, 255, 255, 0.3);
   @media (max-width: 1000px) {
     width: 25vw;
-    margin-top: 1.9em;
-    height: 80vh;
-    top: 0;
+    /* margin-top: 1.9em; */
+    height: 37em;
+    top: 1em;
     left: 0;
     position: fixed;
   }
@@ -187,18 +187,19 @@ export const AboutBtn = styled.button`
 // Flex for display rows (Main Content)
 
 export const DisplayRow = styled.div`
-  margin: 1.87em;
+  padding: 0.5em;
   display: flex;
   flex-direction: row;
   @media (max-width: 1000px) {
     flex-direction: column;
+    padding: 0.9em;
   }
 `;
 
 // Glass effect for display rows (Main Content)
 
 export const HomeStyle = styled.section`
-  margin: 1em 0 1em 0;
+  margin: 1em 0 1em 1em;
   background: rgba(255, 255, 255, 0.21);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -212,9 +213,10 @@ export const HomeStyle = styled.section`
     box-shadow: none;
     backdrop-filter: none;
     margin: 0;
-    top: 0;
+    top: 1em;
     right: 0;
-    position: absolute;
+    left: 5.2em;
+    position: relative;
   }
 `;
 
@@ -223,10 +225,14 @@ export const HomeStyle = styled.section`
 // --------------------------------------------------------
 
 export const CardStyle = styled.section`
-  margin: 0 0.5em 0 0.5em;
+  margin: 0 0.5em;
   padding: 1em;
   text-align: center;
-  width: 26em;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   background: rgba(255, 255, 255, 0.21);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -234,8 +240,11 @@ export const CardStyle = styled.section`
   -webkit-backdrop-filter: blur(4.3px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   @media (max-width: 1000px) {
-    width: 40vw;
-    margin: 0 0 0.5em 0;
+    width: 50%;
+    margin: 0 0 0.5em 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 `;
 
@@ -261,14 +270,15 @@ export const ProjectFrame = styled.iframe`
   }
 `;
 
-// Project links (card)
+// Project links (buttons in card)
 
 export const ProjectBtn = styled.a`
   text-decoration: none;
   color: #0a323b;
   background: white;
-  padding: 0.5em 2em 0.5em 2em;
-  margin: 0 0.5em;
+  margin: 0.5em;
+  padding: 0.5em 1em 0.5em 1em;
+  /* margin: 0 0.5em; */
   border-radius: 16px;
   &:hover {
     color: #82c0cc;
@@ -281,5 +291,15 @@ export const ProjectBtn = styled.a`
   }
   @media (max-width: 1000px) {
     padding: 0.5em 0.5em;
+  }
+`;
+
+export const BtnSection = styled.section`
+  display: flex;
+  justify-content: space-evenly;
+  @media (max-width: 1000px) {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
   }
 `;

@@ -4,7 +4,7 @@ import {
   CardStyle,
   ProjectBtn,
   ProjectImg,
-  ProjectTxt,
+  BtnSection,
 } from "./styled-components/styling";
 
 function ToDoCard() {
@@ -18,18 +18,20 @@ function ToDoCard() {
           fjerne enkelte ting og hele listen.
         </p>
       </section>
-      <ProjectBtn
-        href="https://christiansb89.github.io/todo-list/"
-        target="_blank"
-      >
-        Prøv det her
-      </ProjectBtn>
-      <ProjectBtn
-        href="https://github.com/ChristianSB89/todo-list"
-        target="_blank"
-      >
-        Koden på GitHub
-      </ProjectBtn>
+      <BtnSection>
+        <ProjectBtn
+          href="https://christiansb89.github.io/todo-list/"
+          target="_blank"
+        >
+          Prøv det her
+        </ProjectBtn>
+        <ProjectBtn
+          href="https://github.com/ChristianSB89/todo-list"
+          target="_blank"
+        >
+          Koden på GitHub
+        </ProjectBtn>
+      </BtnSection>
     </CardStyle>
   );
 }
