@@ -8,6 +8,8 @@ import {
   AboutBtn,
   Tagline,
   FooterText,
+  NameStyle,
+  TitleStyle,
 } from "./styled-components/styling";
 import profile from "./img/profile.jpg";
 import Modal from "./modal/aboutModal";
@@ -24,8 +26,8 @@ function SideBar() {
           className="sidebar-image"
         />
 
-        <p id="name">Christian Sandum Breivik</p>
-        <p id="profession">Front End & Grafisk</p>
+        <NameStyle>Christian Sandum Breivik</NameStyle>
+        <TitleStyle>Front End & Grafisk</TitleStyle>
 
         <Tagline>
           Front end student hos Jobloop med stor interesse for grafisk design.

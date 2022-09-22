@@ -50,6 +50,16 @@ export const ImageStyle = styled.img`
   }
 `;
 
+// Styling for name and title
+
+export const NameStyle = styled.p`
+  font-weight: bold;
+`;
+
+export const TitleStyle = styled.p`
+  font-weight: 500;
+`;
+
 // Minor adjustments for the tagline (sidebar)
 
 export const Tagline = styled.p`
