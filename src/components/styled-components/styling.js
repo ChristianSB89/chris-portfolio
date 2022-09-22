@@ -1,8 +1,24 @@
-import styled from "styled-components";
+// --------------------------------------------------------
+// Some guidelines for navigating in this code:
+//    -All my styled components is in this file
+//    -If you want to inspect the style code for a specific object, just use Ctrl + F to find it
+// On a sidenote: I might divide this file into smaller pieces in the future based on wether it is sidebar or not
+// --------------------------------------------------------
 
 // --------------------------------------------------------
-// Flex for the entire page (Sidebar + Main Content)
+// Content:
+//    1. Flex for entire page
+//    2. Styling for the sidebar element
+//    3. Styling of "About" (modal)
+//    4. Styling for the main content
+//    5. Card (parent) styling
 // --------------------------------------------------------
+
+// --------------------------------------------------------
+// 1. Flex for the entire page (Sidebar + Main Content)
+// --------------------------------------------------------
+
+import styled from "styled-components";
 
 export const AppStyle = styled.div`
   display: flex;
@@ -13,7 +29,7 @@ export const AppStyle = styled.div`
 `;
 
 // --------------------------------------------------------
-// Styling for the sidebar element
+// 2. Styling for the sidebar element
 // --------------------------------------------------------
 
 export const SideBarStyle = styled.section`
@@ -32,7 +48,7 @@ export const SideBarStyle = styled.section`
   @media (max-width: 1000px) {
     width: 25vw;
     /* margin-top: 1.9em; */
-    height: 37em;
+    height: 38.5em;
     top: 1em;
     left: 0;
     position: fixed;
@@ -71,11 +87,28 @@ export const Tagline = styled.p`
 
 // Styling for the section that contains the icons that links to social media (sidebar)
 
+// Below; Only showing links on sidebar when width is over 1000 px
+
 export const StyledLinks = styled.section`
   padding: 1em;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  @media (min-width: 1000px) {
+    display: none;
+  }
+`;
+
+// Below; Only showing links in modal when width is 1000 px or lower
+
+export const MobileLinks = styled.section`
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `;
 
 // Styling of the nav and page buttons (sidebar)
@@ -131,7 +164,7 @@ export const MailStyle = styled.a`
 `;
 
 // --------------------------------------------------------
-// Styling of "About" (modal)
+// 3. Styling of "About" (modal)
 // --------------------------------------------------------
 
 export const ModalSection = styled.section`
@@ -147,7 +180,7 @@ export const ModalSection = styled.section`
   backdrop-filter: blur(32px);
   -webkit-backdrop-filter: blur(32px);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  height: 65vh;
+  height: 80%;
   overflow: auto;
   z-index: 9999; //So the modal will always be on top
   @media (max-width: 1000px) {
@@ -191,7 +224,7 @@ export const AboutBtn = styled.button`
 // --------------------------------------------------------
 // End of Sidebar Styles
 // --------------------------------------------------------
-// Styling for the main content
+// 4. Styling for the main content
 // --------------------------------------------------------
 
 // Flex for display rows (Main Content)
@@ -231,7 +264,7 @@ export const HomeStyle = styled.section`
 `;
 
 // --------------------------------------------------------
-// Card (parent) styling
+// 5. Card (parent) styling
 // --------------------------------------------------------
 
 export const CardStyle = styled.section`
@@ -285,19 +318,20 @@ export const ProjectFrame = styled.iframe`
 export const ProjectBtn = styled.a`
   text-decoration: none;
   color: #0a323b;
-  background: white;
+  background: rgba(255, 255, 255, 0.2);
   margin: 0.5em;
   padding: 0.5em 1em 0.5em 1em;
-  /* margin: 0 0.5em; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.3px);
+  -webkit-backdrop-filter: blur(1.3px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 16px;
   &:hover {
     color: #82c0cc;
     background: rgba(255, 255, 255, 0.27);
-    border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
   }
   @media (max-width: 1000px) {
     padding: 0.5em 0.5em;

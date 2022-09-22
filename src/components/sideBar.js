@@ -10,9 +10,13 @@ import {
   FooterText,
   NameStyle,
   TitleStyle,
+  MobileLinks,
 } from "./styled-components/styling";
 import profile from "./img/profile.jpg";
 import Modal from "./modal/aboutModal";
+import linkedin from "./img/linkedin.png";
+import github from "./img/github.png";
+import youtube from "./img/youtube.png";
 
 function SideBar() {
   const [show, setShow] = useState(false);
@@ -34,7 +38,7 @@ function SideBar() {
         </Tagline>
       </section>
 
-      {/* Buttons for navigation */}
+      {/* Below; Simple javascript for showing modal */}
 
       <section>
         <AboutBtn onClick={() => setShow(true)}>Om meg</AboutBtn>
@@ -52,6 +56,20 @@ function SideBar() {
       {/* Links to other pages with copyright and mail at bottom of sidebar */}
 
       <FooterDeco>
+        <MobileLinks>
+          <a href="https://www.linkedin.com/in/chris-sabre/" className="link">
+            <img src={linkedin}></img>
+          </a>
+          <a href="https://github.com/ChristianSB89" className="link">
+            <img src={github}></img>
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCPgLKJdt5ja35Y9hA1UAbJg"
+            className="link"
+          >
+            <img src={youtube}></img>
+          </a>
+        </MobileLinks>
         <FooterText>Copyright © 2022</FooterText>
         <FooterText>Christian Sandum Breivik</FooterText>
       </FooterDeco>
